@@ -12,17 +12,19 @@ class MultiGreeter
   end
 
   def greet
-    msg = 'Hello %s'
+    msg = 'Hello %s' # rubocop: disable Style/StringLiterals
     process msg
   end
 
   def bye
+    # rubocop: disable Style/StringLiterals
     msg = 'Goodbye %s. It\'s been real, it\'s been fun, it\'s been real fun.'
+    # rubocop: enable Style/StringLiterals
     process msg
   end
 
-  private
-  
+private
+
   def process(message)
     if @names.nil?
       puts "..."
