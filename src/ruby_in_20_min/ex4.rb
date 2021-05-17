@@ -41,6 +41,8 @@ if __FILE__ == $PROGRAM_NAME
   mg.bye
 
   # change to an array of names
+  # The %w is shorthand to create an array of strings seperated by space
+  # see https://www.zenspider.com/ruby/quickref.html
   mg.names = %w(matt matthew)
   mg.greet
   mg.bye
