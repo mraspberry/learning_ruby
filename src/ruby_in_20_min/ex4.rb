@@ -1,8 +1,10 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
 
 # MultiGreeter can take either a single name or list of names
 class MultiGreeter
   attr_accessor :names
+
   def initialize(names = "world")
     @names = names
   end
@@ -32,13 +34,14 @@ class MultiGreeter
   end
 end
 
-if __FILE__ == $0 # assume this is equivalent to python's __name__ == '__main__'
+# assume the below is equivalent to python's if __name__ == '__main__'
+if __FILE__ == $PROGRAM_NAME
   mg = MultiGreeter.new("matt")
   mg.greet
   mg.bye
 
   # change to an array of names
-  mg.names = [ "matt", "matthew" ]
+  mg.names = %w(matt matthew)
   mg.greet
   mg.bye
 end

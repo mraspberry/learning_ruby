@@ -1,11 +1,13 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
 
 class Greeter
   def initialize(name = "world")
     @name = name.capitalize # this is an instance variable
   end
 
-  def greet # don't have to put the 'self' arg or even parens. This is sus
+  # don't have to put the 'self' arg or even parens. This is sus
+  def greet
     puts "Hello, #{@name}!"
   end
 
@@ -17,4 +19,3 @@ end
 greeter = Greeter.new("world")
 greeter.greet
 greeter.bye
-
