@@ -1,20 +1,19 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
 
-class Player
-  attr_reader :name
-  attr_accessor :health
+require_relative 'player'
 
-  def initialize(name, health)
-    @name = name
-    @health = health
-  end
-end
-
-greeting = "Welcome!"
+greeting = 'Welcome!'
 3.times do
   puts greeting
 end
 puts Time.new
 
-larry = Player.new("Larry", 60)
-puts "#{larry.name}'s health is #{larry.health}"
+larry = Player.new('larry')
+puts larry.status
+larry.w00t
+puts larry.status
+2.times do
+  larry.blam
+end
+puts larry.status

@@ -5,4 +5,4 @@ def greet(name)
   puts "Hello, #{name.capitalize}!"
 end
 
-greet "world"
+greet 'world'

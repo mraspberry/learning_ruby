@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 
 class Greeter
-  def initialize(name = "world")
+  def initialize(name = 'world')
     @name = name.capitalize # this is an instance variable
   end
 
@@ -16,7 +16,7 @@ class Greeter
   end
 end
 
-greeter = Greeter.new("world")
+greeter = Greeter.new('world')
 puts "greeter.respond_to?('name') #{greeter.respond_to?('name')}"
 greeter.greet
 greeter.bye
@@ -25,9 +25,9 @@ class Greeter
   attr_accessor :name
 end
 
-greeter = Greeter.new("matt")
+greeter = Greeter.new('matt')
 puts "greeter.respond_to?('name') #{greeter.respond_to?('name')}"
 greeter.greet
-greeter.name = "matthew" # NOTE: here this doesn't call initialize apparently
+greeter.name = 'matthew' # NOTE: here this doesn't call initialize apparently
 greeter.greet
 greeter.bye

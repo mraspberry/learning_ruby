@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 
 class Greeter
-  def initialize(name = "world")
+  def initialize(name = 'world')
     @name = name.capitalize # this is an instance variable
   end
 
@@ -16,6 +16,6 @@ class Greeter
   end
 end
 
-greeter = Greeter.new("world")
+greeter = Greeter.new('world')
 greeter.greet
 greeter.bye
