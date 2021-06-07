@@ -2,12 +2,12 @@
 # frozen_string_literal: true
 
 def set_state
-  @name = 'Matt'
+  @name = "Matt"
 end
 
 def check_state
   puts @name
-  @name = 'Sus'
+  @name = "Sus"
   puts @name
 end
 

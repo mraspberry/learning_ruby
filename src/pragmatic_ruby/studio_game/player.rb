@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class Player # rubocop:disable Style/Documentation
+class Player
   attr_accessor :name
 
   def initialize(name, health = 100)
@@ -20,7 +20,7 @@ class Player # rubocop:disable Style/Documentation
     health(@health - 15)
   end
 
-  private
+private
 
   def health(new_health)
     new_health = 0 if new_health.negative?
