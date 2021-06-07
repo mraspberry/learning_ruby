@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-class Greeter
+class Greeter # rubocop:disable Style/Documentation
   def initialize(name = 'world')
     @name = name.capitalize # this is an instance variable
   end

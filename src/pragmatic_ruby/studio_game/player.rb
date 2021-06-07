@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class Player
+class Player # rubocop:disable Style/Documentation
   attr_accessor :name
 
   def initialize(name, health = 100)
